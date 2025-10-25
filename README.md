@@ -15,6 +15,6 @@ I structured my database with 3 tables: Users, Posts, Comments
   - Comments table has two foreign keys: one pointing to the primary key of a Post, the
     other pointing to the primary key of a User.
 
-Structured this way, I can start at with any piece of data(User, Post, Comment) and 
+Structured this way, I can start with any piece of data(User, Post, Comment) and 
 access another piece of data with an association to it. Rails makes things way
 too easy!
