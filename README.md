@@ -1,4 +1,5 @@
 # README
+Micro-Reddit Database Clone
 
 This purpose of this project was to gain familiarity with Rails associations, migrations,
 data validation and to practice planning proper schema within a database.
