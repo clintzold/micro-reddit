@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This purpose of this project was to gain familiarity with Rails associations, migrations,
+data validation and to practice planning proper schema within a database.
 
-Things you may want to cover:
+I structured my database with 3 tables: Users, Posts, Comments
 
-* Ruby version
+A user HAS posts, comments
+A post BELONGS to a user and HAS comments
+A comments BELONGS to both a user and post
 
-* System dependencies
+Posts table has a foreign key that points to the primary key of a user in Users table
+Comments table has two foreign keys. One points to the primary key of a Post, the
+other points to the primary key of a user.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Structured this way, I can start at with any piece of data(User, Post, Comment) and 
+access another piece of data with an association to it. Rails makes things way
+too easy!
