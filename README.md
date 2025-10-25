@@ -10,7 +10,7 @@ A user HAS posts and comments.
 A post BELONGS to a user and HAS comments.
 A comments BELONGS to both a user and post.
 
-Posts table has a foreign key that points to the primary key of a user in Users table
+Posts table has a foreign key that points to the primary key of a user in Users table.
 Comments table has two foreign keys. One points to the primary key of a Post, the
 other points to the primary key of a user.
 
